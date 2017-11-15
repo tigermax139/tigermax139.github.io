@@ -441,6 +441,7 @@ header {
 	display: none;
 }
 .vissible {
+	box-sizing: border-box;
 }
 .goods-bottom .top-brand-item{
 	border-bottom: none;
