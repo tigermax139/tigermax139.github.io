@@ -180,6 +180,29 @@ header {
     width: 50%;
     font-size: 14px;
 }
+a.slider-button {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #bd8a60;
+	font-size: 15px;
+	line-height: 100px;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: all 0.5s;
+}
+a.slider-button:hover {
+	color: white;
+	background-color: #bd8a60;
+	opacity: 0.5;
+	transform: scale(1.1);
+	transition: all 0.5s;
+}
 .my-slider .slide-text-wrapper img {
 	width: auto;
 	position: absolute;
