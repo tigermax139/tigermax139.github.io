@@ -1,0 +1,197 @@
+/*#00acd5 country
+    #327cb4 pp
+    #0a4c86 button
+    #eeeeee gray
+    #ce000d red
+
+*/
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+form {
+    background-color: #0d91d9;
+    padding: 40px 0 ;
+    box-sizing: border-box;
+}
+input[type="number"],
+input[type="text"] {
+    height: 40px;
+    max-width: 160px;
+    min-width: 120px;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid gray;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+fieldset {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 35px 50px;
+    text-align: center;
+}
+.static select {
+    height: 40px;
+    background-color: #00acd5;
+    color: white;
+    border: 1px solid #2b669a;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+.recipient {
+    margin-left: 15px;
+}
+.static input[type="text"] {
+    border: 1px solid #2b669a;
+    max-width: 600px;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.check {
+    text-align: center;
+}
+/*********потом поставит чекбокс************/
+.runner {
+    transition: 0.5s all;
+}
+.runner-content {
+    position: relative;
+    display: block;
+    width: 100px;
+    min-height: 40px;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #327cb4;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.runner-content::after {
+    content: attr(data-pallet);
+}
+.runner-content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #31708f;
+    width: 30px;
+    background-color: #f6f6f6;
+}
+.check input[type="checkbox"] {
+    display: none;
+}
+.check input[type="checkbox"]:checked + .runner .runner-content {
+    padding-left: 10px;
+    padding-right: 40px;
+}
+.check input[type="checkbox"]:checked + .runner .runner-content::after {
+    content: attr(data-parcel);
+}
+.check input[type="checkbox"]:checked + .runner .runner-content::before {
+    left: calc(100% - 30px);
+    border-radius: 0 10px 10px 0;
+}
+.check input[type="checkbox"]:checked ~ .pallet {
+    display: none;
+}
+.check input[type="checkbox"]:checked ~ .parcel {
+    display: block;
+}
+.parcel {
+    display: none;
+}
+/*****item**********/
+div[class*="-item"] input[type="text"] {
+    padding-right: 35px;
+    padding-left: 5px;
+}
+div[class*="-item"] label {
+    position: relative;
+}
+
+div[class*="-item"] label::after {
+    content: attr(data-units);
+    display: block;
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    right: 10px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #ababab;
+    background-color: #f6f6f6;
+    width: 30px;
+    padding-top: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/********************/
+fieldset.button-group {
+    background-color: transparent;
+}
+.button-group button{
+    border: 1px solid #327cb4;
+    border-radius: 10px;
+    outline: none;
+    background-color: #0a4c86;
+    color: white;
+    font-weight: 600;
+
+    padding: 15px 20px;
+
+    transition: 0.3s all;
+}
+.button-group button:last-child {
+    background-color: #ce000d;
+    border-color: #ce055d;
+}
+.button-group button:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+@media screen and (max-width: 1199px) {
+    div[class*="-item"] label::after {
+        right: -20px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .recipient {
+        margin-left: -15px;
+        margin-top: 20px;
+    }
+    div[class*="-item"] label::after {
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .button-group button:first-child {
+        width: 40%;
+        margin-right: 0.9%;
+    }
+    .button-group button:last-child {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 365px){
+    div.pallet-item:first-child {
+        font-size: 13px; /*Samsung Galaxy S5 not correct visible*/
+    }
+}
