@@ -168,7 +168,8 @@ form fieldset{
     font-size: 1.28em;
     position: relative;
 }
-input[type="text"] {
+input[type="text"],
+input[type="password"] {
     display: block;
     width: 85%;
     padding: 15px;
