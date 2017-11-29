@@ -1,0 +1,161 @@
+#menuToggle {
+    display: none;
+}
+@media  screen and (max-width:1040px) {
+    .top-nav {
+        justify-content: center;
+    }
+    .top-nav ul {
+        flex-wrap: wrap;
+    }
+    .cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card {
+        flex-basis: 31%;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    .card:nth-child(3){
+        margin-right: 15px;
+        margin-left: 0;
+    }
+    .card:nth-child(4){
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    footer h2{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 900px) {
+    .column {
+        max-width: 80%;
+    }
+    footer .partners {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .partner {
+        margin-right: 10px;
+    }
+    .partner:last-child {
+        margin-right: 0;
+    }
+    footer div.wrapper.row {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    footer section {
+        flex-basis: 40%;
+    }
+}
+@media screen and (max-width: 660px){
+    /*make burger*/
+    .top-nav {
+        flex-direction: column;
+        position: relative;
+    }
+    ul.menu {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: 0.2s all;
+    }
+    .top-nav ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-nav ul li {
+        border-right: none ;
+        border-top: 1px solid black;
+    }
+    .menu-check {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #aba;
+
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        transition: 0.5s all;
+    }
+    .menu-check:hover {
+        cursor: pointer;
+        background: #7d7d7d;
+    }
+    .burger {
+        display: block;
+        width: 40px;
+        height: 3px;
+        border-radius: 1px;
+        background-color: white;
+
+        position: relative;
+        top: calc(50% - 3px);
+        left: calc(50% - 20px);
+    }
+    .burger::after,
+    .burger::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 3px;
+        border-radius: 1px;
+        background-color: white;
+        position: relative;
+    }
+    .burger::before {
+        top: -10px;
+    }
+    .burger::after {
+        top: 8px;
+    }
+
+    #menuToggle:checked ~ ul.menu {
+        max-height: 300px;
+        opacity: 1;
+        transition: 0.2s all;
+    }
+    #menuToggle:checked ~ .menu-check {
+        transform: rotate(90deg);
+        transition: 0.5s all;
+    }
+    /*burger end*/
+    .column {
+        max-width: 100%;
+    }
+
+}
+@media screen and (max-width: 530px) {
+    .cards .card {
+        margin: 0 0 15px 0;
+    }
+    footer section {
+        flex-basis: 80%;
+    }
+}
+@media screen and (max-width: 480px) {
+    main .column > .row {
+        flex-direction: column;
+    }
+    main .column > .row form {
+        order: 2;
+        flex-basis: 100%;
+    }
+    main .column > .row .slogan {
+        order: 1;
+        flex-basis: 100%;
+        font-size: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}

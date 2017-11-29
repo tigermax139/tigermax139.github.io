@@ -1,0 +1,112 @@
+.cards, .football_PNG1082-copy, .s-1, .alarm-clock-widget-1bdf65-w192, .evolution-gaming, .fifa, .gilpay, .lisance, .logo, .master-card, .microgaming, .neteller, .ukash, .visa, .webmoney, .astropay, .bank-transfer, .betradar{
+	background: url(sprites.png) no-repeat;
+}
+
+.cards{
+	background-position: -202px 0;
+	width: 87px;
+	height: 72px;
+}
+
+.football_PNG1082-copy{
+	background-position: -134px 0;
+	width: 60px;
+	height: 61px;
+}
+
+.s-1{
+	background-position: -52px 0;
+	width: 67px;
+	height: 55px;
+}
+
+.alarm-clock-widget-1bdf65-w192{
+	background-position: 0 0;
+	width: 48px;
+	height: 54px;
+}
+
+.evolution-gaming{
+	background-position: 0 -199px ;
+	width: 81px;
+	height: 10px;
+}
+
+.fifa{
+	background-position: -98.0000114440918px -198px ;
+	width: 70px;
+	height: 32px;
+}
+
+.gilpay{
+	background-position: -279.0000114440918px -148px ;
+	width: 45px;
+	height: 18px;
+}
+
+.lisance{
+	background-position: -184.0000114440918px -200px ;
+	width: 26px;
+	height: 40px;
+}
+
+.logo{
+	background-position: -1px -250.0000057220459px ;
+	width: 75px;
+	height: 27px;
+}
+
+.master-card{
+	background-position: -50.0000114440918px -148px ;
+	width: 26px;
+	height: 13px;
+}
+
+.microgaming{
+	background-position: 0 -213px ;
+	width: 81px;
+	height: 17px;
+}
+
+.neteller{
+	background-position: -76.0000114440918px -101px ;
+	width: 48px;
+	height: 9px;
+}
+
+.ukash{
+	background-position: -106.0000114440918px -150px ;
+	width: 51px;
+	height: 19px;
+}
+
+.visa{
+	background-position: -76.0000114440918px -149px ;
+	width: 25px;
+	height: 9px;
+}
+
+.webmoney{
+	background-position: -160.99999618530273px -151px ;
+	width: 66px;
+	height: 17px;
+}
+
+.astropay{
+	background-position: -230.99999618530273px -151px ;
+	width: 44px;
+	height: 18px;
+}
+
+.bank-transfer{
+	background-position: -0.9999961853027344px -149px ;
+	width: 46px;
+	height: 19px;
+}
+
+.betradar{
+	background-position: 0 -103px ;
+	width: 69px;
+	height: 14px;
+}
+
